@@ -1,0 +1,20 @@
+== output tmp dir:  C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/zh2en/tmp ==
+== output dir:  C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/zh2en ==
+Preprocessing the dataset...
+===== Start Preprocess Data =====
+===== 2024-08-08 20:39:06 ===== Start Clean and Tokenization for language=en =====
+  (by default)deescape_special_fields=true and remove-non-printing-chars=true
+  do_normalize_punctuations=true
+  tokenizer=MosesTokenizer
+Preprocess Command: cat C:\Users\cyber\Desktop\mRASP\experiments\example\data\raw\test\zh2en\test.en | perl /c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/clean_scripts/deescape-and-remove-nonprint.pl -threads 30  | perl /c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/clean_scripts/normalize-punctuation.pl -l en -threads 30 | sed 's/[ ][ ]\+/ /g' | perl /c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/tokenize_scripts/moses_tokenizer.pl -a -q -l en -no-escape -threads 30  > C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/zh2en/test.en
+    applying above... to C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/zh2en/test.en
+===== 2024-08-08 20:39:06 ===== Start Clean and Tokenization for language=zh =====
+  (by default)deescape_special_fields=true and remove-non-printing-chars=true
+  do_normalize_punctuations=true
+  tokenizer=MosesTokenizer
+Preprocess Command: cat C:\Users\cyber\Desktop\mRASP\experiments\example\data\raw\test\zh2en\test.zh | perl /c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/clean_scripts/deescape-and-remove-nonprint.pl -threads 30  | perl /c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/clean_scripts/normalize-punctuation.pl -l zh -threads 30 | sed 's/[ ][ ]\+/ /g' | perl /c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/tokenize_scripts/moses_tokenizer.pl -a -q -l zh -no-escape -threads 30  > C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/zh2en/test.zh
+    applying above... to C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/zh2en/test.zh
+cat: 'C:UserscyberDesktopmRASPexperimentsexampledatarawtestzh2entest.en': No such file or directory
+cat: 'C:UserscyberDesktopmRASPexperimentsexampledatarawtestzh2entest.zh': No such file or directory
+/c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/prep_each.sh: line 33: C:UserscyberDesktopmRASPexperimentsexampledatapreptest/cleaned/zh2en/test.en: No such file or directory
+/c/Users/cyber/Desktop/mRASP/preprocess/tools/data_preprocess/prep_each.sh: line 33: C:UserscyberDesktopmRASPexperimentsexampledatapreptest/cleaned/zh2en/test.zh: No such file or directory

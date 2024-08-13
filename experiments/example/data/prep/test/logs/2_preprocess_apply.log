@@ -1,0 +1,3 @@
+INPUT DIR: C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned
+OUTPUT DIR: C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/output
+ls: cannot access 'C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/cleaned/*': No such file or directory

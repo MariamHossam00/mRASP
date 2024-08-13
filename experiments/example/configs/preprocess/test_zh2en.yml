@@ -1,0 +1,26 @@
+raw_data_path: /content/mRASP/experiments/example/data/raw/test
+merged_output_path: /content/mRASP/experiments/example/test_data/zh2en
+output_main_path: /content/mRASP/experiments/example/data/prep/test
+final_vocab_path: /content/mRASP/experiments/example/vocab
+configs_subdir: configs
+cleaned_subdir: cleaned
+logs_subdir: logs
+vocab_subdir: vocab
+output_subdir: output
+preprocess_steps_list: clean:subword:merge
+file_prefix: test
+learn: false
+subword_bpe_merge_ops: 32000
+pairs: zh_en
+directions: zh2en
+languages: zh;en
+default_pairs:
+  deduplicate: false
+  keep_lines_percent: '1.0'
+  shuffle: false
+default_langs:
+  do_normalize_punctuations: true
+  tokenizer: MosesTokenizer
+src: zh
+trg: en
+

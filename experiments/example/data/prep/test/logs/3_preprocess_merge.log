@@ -1,0 +1,4 @@
+===== TYPE: ManyToMany =====
+-->=== Add Lang Token to front of Training Corpus ===<--
+test.zh --> new_test.zh
+/c/Users/cyber/Desktop/mRASP/preprocess/multilingual_merge.sh: line 76: C:\Users\cyber\Desktop\mRASP\experiments\example\data\prep\test/output/zh2en/new_test.zh: No such file or directory

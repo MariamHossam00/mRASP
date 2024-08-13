@@ -1,0 +1,13 @@
+deduplicate: false
+keep_lines_percent: '1.0'
+language1:
+  config_file: C:\\Users\\cyber\\Desktop\\mRASP\\experiments\\example\\data\prep\test\configs\preprocess_zh.yml
+  file: C:\\Users\\cyber\\Desktop\\mRASP\\experiments\\example\\data\\raw\\test\zh2en\test.zh
+  language: zh
+language2:
+  config_file: C:\\Users\\cyber\\Desktop\\mRASP\\experiments\\example\\data\prep\test\configs\preprocess_en.yml
+  file: C:\\Users\\cyber\\Desktop\\mRASP\\experiments\\example\\data\\raw\\test\zh2en\test.en
+  language: en
+log_file: C:\\Users\\cyber\\Desktop\\mRASP\\experiments\\example\\data\prep\test\logs\preprocess_zh2en.log
+output_path: C:\\Users\\cyber\\Desktop\\mRASP\\experiments\\example\\data\prep\test\configs\zh2en
+shuffle: false

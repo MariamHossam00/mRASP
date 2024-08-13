@@ -1,0 +1,3 @@
+do_normalize_punctuations: true
+language: zh
+tokenizer: MosesTokenizer
